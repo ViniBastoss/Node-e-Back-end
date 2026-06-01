@@ -1,0 +1,22 @@
+{
+  "name": "app_expressjs",
+  "version": "1.0.0",
+
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node-dev --transpile-only app.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  }
+}
