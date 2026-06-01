@@ -1,18 +1,17 @@
 {
   "name": "app_expressjs",
   "version": "1.0.0",
-
   "description": "",
   "license": "ISC",
   "author": "",
-  
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx ts-node-dev --transpile-only app.ts"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pug": "^3.0.4"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
