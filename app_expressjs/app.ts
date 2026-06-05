@@ -7,7 +7,7 @@ app.use(clientsRouter);
 app.set("view engine", "pug");
 app.set("views", "./Views")
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Servidor ligado!")
 
 });

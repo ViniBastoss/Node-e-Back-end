@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node-dev --transpile-only app.ts"
+    "start": "npx ts-node-dev --transpile-only -r dotenv/config app.ts"
   },
   "dependencies": {
     "express": "^5.2.1",
