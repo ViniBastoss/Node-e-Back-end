@@ -5,3 +5,4 @@ function index (req: Request, res: Response, next: any){
 
 }
 export default { index };
+
