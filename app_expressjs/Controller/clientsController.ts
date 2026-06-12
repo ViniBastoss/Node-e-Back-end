@@ -6,6 +6,11 @@ async function index (req: Request, res: Response, next: any){
 // res.render("index") <-- comentando o render
 const clients = await clientsModel.findAll();
 res.json(clients)
+
 }
-export default { index };
+
+async function create (req: Request, res: Response, next: any){
+    res.send("create")
+}
+export default { index, create};
 

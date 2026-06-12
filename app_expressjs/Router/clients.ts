@@ -7,6 +7,8 @@ const router = Router();
 
 
 router.get('/',clientsController.index);
+
+router.get('/create',clientsController.create);
    
 
 router.get('/sobrenos',(req, res)=>{
