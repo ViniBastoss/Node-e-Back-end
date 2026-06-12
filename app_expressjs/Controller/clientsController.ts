@@ -10,7 +10,7 @@ res.json(clients)
 }
 
 async function create (req: Request, res: Response, next: any){
-    res.send("create")
+    res.render("create")
 }
 export default { index, create};
 
