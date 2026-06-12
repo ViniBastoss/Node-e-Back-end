@@ -4,32 +4,22 @@ head
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
 
   body
-    p
+    p 
     .modal-dialog
         .modal-content
           // Modal Header
-          .modal-header
-            button.close(type="button", data-dismiss="modal")
-              span(aria-hidden="true") ×
-              span.sr-only Close
-            h4#myModalLabel.modal-title
-              | Edit Resource
+         
           // Modal Body
           .modal-body
             //#editForm.form(role='form' method='GET' action='https://www.google.com/')
-            form(role='form' method='GET' action='https://www.google.com/')
+            form(role='form' method='' action='')
               div.form-group
-                label(for='name') Name:
-                input#name.form-control(type='text', placeholder='name' name='name')
+                label(for='name') Nome:
+                input#name.form-control(type='text', placeholder='nome' name='name')
               div.form-group
                 label(for='email') Email:
-                input#email.form-control(type='email', placeholder='name@email.com' name='email')
-              button.btn.btn-primary(type="submit", name="asdf") Submit
-              button.btn.btn-default(type="button", data-dismiss="modal")
-                | Close
-          // Modal Footer
-          .modal-footer
-            h4 footer
-
-    // footer
-    p.foot.text-xs-center test
+                input#email.form-control(type='email', placeholder='nome@email.com' name='email')
+              button.btn.btn-primary(type="submit", name="asdf") Adicionar Cliente
+             
+                
+          

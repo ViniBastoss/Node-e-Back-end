@@ -9,6 +9,7 @@ const router = Router();
 router.get('/',clientsController.index);
 
 router.get('/create',clientsController.create);
+router.post("/create", clientsController.store);
    
 
 router.get('/sobrenos',(req, res)=>{
