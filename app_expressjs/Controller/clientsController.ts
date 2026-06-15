@@ -8,10 +8,16 @@ const clients = await clientsModel.findAll();
 res.json(clients)
 
 }
+async function show (req: Request, res: Response, next: any){
+// res.render("index") <-- comentando o render
+const client = await clientsModel.findByPk(req.params.id);
+res.json(client)
+}
 
 async function create (req: Request, res: Response, next: any){
-    res.render("create")
+res.render("create")
 }
+    
 
 async function store (req: Request, res: Response, next: any){
     let client = req.body as IClients
@@ -19,5 +25,5 @@ async function store (req: Request, res: Response, next: any){
     await clientsModel.create({...client});
     res.redirect("/");
 }
-export default { index, create,store};
+export default { index, create,store,show};
 
