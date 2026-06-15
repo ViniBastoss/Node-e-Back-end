@@ -3,7 +3,7 @@ import clientsRouter from "./Router/clients"
 import db from "./db"
 
 const app = express();
-
+app.use(express.urlencoded({extended: true}))
 app.use(clientsRouter);
 app.set("view engine", "pug");
 app.set("views", "./Views")

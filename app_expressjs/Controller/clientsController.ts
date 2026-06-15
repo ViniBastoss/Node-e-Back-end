@@ -12,5 +12,12 @@ res.json(clients)
 async function create (req: Request, res: Response, next: any){
     res.render("create")
 }
-export default { index, create};
+
+async function store (req: Request, res: Response, next: any){
+    let client = req.body as IClients
+
+    await clientsModel.create({...client});
+    res.redirect("/");
+}
+export default { index, create,store};
 

@@ -12,10 +12,10 @@ head
           // Modal Body
           .modal-body
             //#editForm.form(role='form' method='GET' action='https://www.google.com/')
-            form(role='form' method='' action='')
+            form(role='form' method='POST' action='/create')
               div.form-group
                 label(for='name') Nome:
-                input#name.form-control(type='text', placeholder='nome' name='name')
+                input#name.form-control(type='text', placeholder='nome', name='nome')
               div.form-group
                 label(for='email') Email:
                 input#email.form-control(type='email', placeholder='nome@email.com' name='email')
