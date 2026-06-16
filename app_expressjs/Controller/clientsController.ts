@@ -24,6 +24,6 @@ async function store (req: Request, res: Response, next: any){
 
     await clientsModel.create({...client});
     res.redirect("/");
-}
-export default { index, create,store,show};
+    }
+    export default { index, create,store,show};
 
