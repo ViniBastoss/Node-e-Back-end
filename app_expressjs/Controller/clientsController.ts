@@ -25,5 +25,11 @@ async function store (req: Request, res: Response, next: any){
     await clientsModel.create({...client});
     res.redirect("/");
     }
+
+    async function edit (req: Request, res: Response, next: any){
+    const client = await clientsModel.findByPk(req.params.id);
+   res.render("edit")
+    }
+   
     export default { index, create,store,show};
 

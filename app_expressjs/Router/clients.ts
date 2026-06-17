@@ -11,7 +11,7 @@ router.get('/:id',clientsController.show);
 
 router.get('/create',clientsController.create);
 router.post("/create", clientsController.store);
-router.get("/edit", clientsController.edit);
+router.get("/edit/:edit", clientsController.edit);
    
 
 router.get('/sobrenos',(req, res)=>{
