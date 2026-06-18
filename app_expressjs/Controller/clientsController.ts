@@ -28,8 +28,8 @@ async function store (req: Request, res: Response, next: any){
 
     async function edit (req: Request, res: Response, next: any){
     const client = await clientsModel.findByPk(req.params.id);
-   res.render("edit")
+   res.render("edit", {client: client});
     }
    
-    export default { index, create,store,show};
+    export default { index, create, store,show, edit};
 
