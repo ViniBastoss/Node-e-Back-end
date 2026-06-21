@@ -1,15 +1,34 @@
 import {Request, Response} from "express";
-import { IClients } from "../Model/clients";
-import clientsModel from "../Model/clientsModel";
+import { IUsers} from "../Model/clients";
+import usersModel from "../Model/usersModel";
 
-async function index (req: Request, res: Response, next: any){
-// res.render("index") <-- comentando o render
-const clients = await clientsModel.findAll();
-res.json(clients)
+function login (req: Request, res: Response, next: any){
+
+    res.render("login");
+
+}
+async function checkLogin (req: Request, res: Response, next: any){
+
+    const login = req.body as IUsers;
+
+    let logado = await usersModel.findOne({
+        where:{
+            user: login.user,
+            password: login.password
+        }
+    });
+
+    if(logado != null){
+        //OK!
+    }
+    else{
+        //NOT OK
+    }
 
 }
 
 
 
- export default { index, create, store,show, edit, update, del}
+
+ export default { login, checkLogin}
 

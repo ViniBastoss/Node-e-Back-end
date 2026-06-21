@@ -1,5 +1,5 @@
 import {Router} from "express";
-import clientsController from "../Controller/clientsController";
+import usersController from "../Controller/usersController";
 
 
 const router = Router();
@@ -7,6 +7,7 @@ const router = Router();
 
 
 router.get('/',usersController.login);
+router.get('/',usersController.checkLogin);
 
 
 
