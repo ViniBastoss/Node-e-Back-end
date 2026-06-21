@@ -1,5 +1,5 @@
-export interface IClients{
+export interface IUsers {
     id: number,
-    nome: string,
-    email: string
+    user: string,
+    password: string // <-- Aqui entra a mágica da segurança!
 }
