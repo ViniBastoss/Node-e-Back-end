@@ -6,14 +6,14 @@ const router = Router();
 
 
 
-router.get('clientes/',clientsController.index);
+router.get('/clients/',clientsController.index);
 
 
-router.get('clientes/create',clientsController.create);
-router.post("clientes/create", clientsController.store);
-router.get("clientes/edit/:id", clientsController.edit);
-router.post("clientes/edit/:id", clientsController.update);
-router.get("clientes/del/:id", clientsController.del);
+router.get('/clients/create',clientsController.create);
+router.post("/clients/create", clientsController.store);
+router.get("/clients/edit/:id", clientsController.edit);
+router.post("/clients/edit/:id", clientsController.update);
+router.get("/clients/del/:id", clientsController.del);
 
    
    

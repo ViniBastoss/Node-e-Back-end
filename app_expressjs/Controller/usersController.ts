@@ -19,9 +19,11 @@ async function checkLogin (req: Request, res: Response, next: any){
     });
 
     if(logado != null){
+        res.redirect("/clients")
         //OK!
     }
     else{
+        console.log("Senha inválida!")
         //NOT OK
     }
 
